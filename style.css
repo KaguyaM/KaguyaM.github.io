@@ -17,6 +17,7 @@ body {
     width: 100%;
     background-color: rgb(240, 240, 240);
     overflow: hidden;
+    z-index: 2;
 }
 
 .navbar a {
@@ -102,7 +103,6 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: rgb(17, 114, 224);
-    z-index: -1;
 }
 
 .icon a:hover {
