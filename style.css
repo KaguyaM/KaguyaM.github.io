@@ -102,9 +102,156 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: rgb(17, 114, 224);
+    z-index: -1;
 }
 
 .icon a:hover {
     background-color: white;
     transition: .5s;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: rgb(51, 51, 59);
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 24px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.edu-img {
+    position: relative;
+    width: 80%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.edu-img img {
+    max-width: 80%;
+    height: 50%;
+    object-fit: contain;
+    align-self: start;
+    margin-bottom: 20px;
+    z-index: -1;
+}
+
+.edu-text {
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.skills {
+    min-height: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background-color: rgb(51, 51, 59);
+}
+
+.skill-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.skill-col {
+    flex: 1 1 30rem;
+}
+
+.skill-content {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: .5rem 1.5rem;
+}
+
+.progress {
+    padding: 1rem 0;
+}
+
+.progress h3 {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress h3 span {
+    color: rgb(17, 114, 224);
+}
+
+.bar {
+    height: 12px;
+    border-radius: 4px;
+    border: 2px solid rgb(17, 114, 224);
+    padding: 2px;
+    margin: 4px 0;
+}
+
+.bar span {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgb(17, 114, 224);
+}
+
+.skill-col:nth-child(1) .skill-content .progress:nth-child(1) .bar span{
+    width: 70%;
+}
+
+.skill-col:nth-child(1) .skill-content .progress:nth-child(2) .bar span{
+    width: 50%;
+}
+
+.skill-col:nth-child(1) .skill-content .progress:nth-child(3) .bar span{
+    width: 75%;
+}
+
+.skill-col:nth-child(1) .skill-content .progress:nth-child(4) .bar span{
+    width: 40%;
+}
+
+.skill-col:nth-child(2) .skill-content .progress:nth-child(1) .bar span{
+    width: 60%;
+}
+
+.skill-col:nth-child(2) .skill-content .progress:nth-child(2) .bar span{
+    width: 60%;
+}
+
+.skill-col:nth-child(2) .skill-content .progress:nth-child(3) .bar span{
+    width: 95%;
+}
+
+.skill-col:nth-child(2) .skill-content .progress:nth-child(4) .bar span{
+    width: 80%;
 }
